@@ -1,4 +1,4 @@
-import { IconHome } from '@tabler/icons-react';import { IconSettingsCheck } from '@tabler/icons-react';import { IconCertificate } from '@tabler/icons-react';import { IconPhone } from '@tabler/icons-react';import { IconX } from '@tabler/icons-react';import { IconMenu3 } from '@tabler/icons-react';
+import { IconHome } from '@tabler/icons-react';import { IconSettingsCheck } from '@tabler/icons-react';import { IconCertificate } from '@tabler/icons-react';import { IconPhone } from '@tabler/icons-react';import { IconX } from '@tabler/icons-react';import { IconMenu3 } from '@tabler/icons-react';import { IconAdjustmentsCog } from '@tabler/icons-react';
 import './assets/header.css';
 import { useState } from 'react';
 
@@ -40,6 +40,11 @@ function Header(){
                 <a href="#">
                     <button><IconSettingsCheck stroke={2} />
                         <span>Key Competencies</span>
+                    </button>
+                </a>
+                <a href="#">
+                    <button><IconAdjustmentsCog stroke={2} />
+                        <span>Projects</span>
                     </button>
                 </a>
                 <a href="#">
