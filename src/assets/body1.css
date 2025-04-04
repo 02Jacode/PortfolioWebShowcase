@@ -4,7 +4,6 @@
     font-size: 2rem;
     line-height: 1.5rem;
 }
-
 .me button {
     font-size: 1rem;
     color: azure;
@@ -18,7 +17,6 @@
     overflow: hidden;
     min-width: 120px;
 }
-
 .buttons {
     padding: 0 0 0 3rem;
     display: flex;
@@ -52,4 +50,60 @@
 
 .me button:hover::after {
     opacity: 1;
+}
+.typing-text {
+  display: inline-block;
+  position: relative;
+  color: rgb(4, 188, 255);
+  margin-right: 5px;
+}
+
+.cursor {
+  display: inline-block;
+  color: rgb(4, 188, 255);
+  animation: blink 1s infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@media (max-width: 768px) {
+    .me {
+        padding: 1rem 0 1rem 1rem;
+        font-size: 1.5rem;
+    }
+    .buttons {
+        padding: 0 0 0 1rem;
+    }
+    .me button {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+    
+    .text-content h1
+    {
+        margin-bottom: 0.1rem;
+        line-height: 1.1;
+        
+    }
+    .text-content h4
+    {
+        margin: -2px 0 0 15px;
+        margin-top: -2px;
+        line-height: 1;
+
+    }
+    .header-text
+    {
+        line-height: -5rem;
+    }
+    h2{
+        line-height: 1rem;
+    }
+    .typing-text {
+        font-size: 0.9em;
+      }
 }

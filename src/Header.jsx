@@ -22,7 +22,7 @@ function Header(){
     )}
  <div className="PageLogo">
             <h1>J.</h1>
-        </div>
+</div>
         <div className={`menu ${isCollapsed ? 'collapsed' : ''} ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
             <nav>
                 <a href="#" className="menu-toggle" onClick={toggleMenu}>
@@ -58,6 +58,8 @@ function Header(){
                     </button>
                 </a>
             </nav>
+
+
         </div>
     </>
     );
