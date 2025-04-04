@@ -62,8 +62,7 @@ function Body1() {
             textShadow: '0 0 0.2cm rgba(0, 0, 0, 0.5)',
             fontSize: '20px'
           }}>
-            {time.dayOfWeek}, {time.fullDate} | 
-             {time.timeString}
+            {time.dayOfWeek}, {time.fullDate} | {time.timeString}
           </div>
         </div>
         <div className="buttons">

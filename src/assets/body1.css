@@ -56,6 +56,8 @@
   position: relative;
   color: rgb(4, 188, 255);
   margin-right: 5px;
+  text-shadow: 0 1px 12px rgba(4, 188, 255, 1.5);
+
 }
 
 .cursor {
@@ -91,7 +93,7 @@
     }
     .text-content h4
     {
-        margin-top: -5px;
+        margin-top: -15px;
         line-height: 1;
 
     }
