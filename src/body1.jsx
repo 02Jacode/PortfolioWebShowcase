@@ -54,7 +54,7 @@ function Body1() {
             <h1>My name is Jacob Cortes</h1>
             <h4>
               I'm a <span className="typing-text">{displayText}</span>
-              <span className="cursor"> | </span>
+              <span className="cursor">|</span>
             </h4>
           </div>
           <div className="clock" style={{
