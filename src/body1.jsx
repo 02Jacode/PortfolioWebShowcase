@@ -1,21 +1,21 @@
 import './assets/body1.css';
-import { getCurrentTime } from './assets/clock.js';
+// import { getCurrentTime } from './assets/clock.js';
 import { useEffect, useState } from 'react';
 
 function Body1() {
-  const [time, setTime] = useState(getCurrentTime());
+  // const [time, setTime] = useState(getCurrentTime());
   const [roleIndex, setRoleIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const roles = ['Web Developer', 'Front-End Developer', 'Back-End Developer', 'Tech Enthusiast'];
   
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTime(getCurrentTime());
-    }, 1000);
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setTime(getCurrentTime());
+  //   }, 1000);
 
-    return () => clearInterval(timer);
-  }, []);
+  //   return () => clearInterval(timer);
+  // }, []);
 
   useEffect(() => {
     const currentRole = roles[roleIndex];
@@ -53,23 +53,24 @@ function Body1() {
           <div className="text-content">
             <h1>My name is Jacob Cortes</h1>
             <h4>
-              I'm a [<span className="typing-text">{displayText}</span><span className="cursor">|</span>]
+              I'm a [ <span className="typing-text">{displayText}</span><span className="cursor">|</span>]
             </h4>
           </div>
-          <div className="clock" style={{
+          {/* <div className="clock" style={{
             color: 'white',
             textShadow: '0 0 0.2cm rgba(0, 0, 0, 0.5)',
             fontSize: '20px'
           }}>
             {time.dayOfWeek}, {time.fullDate} | {time.timeString}
-          </div>
-        </div>
+          </div> */}
         <div className="buttons">
           <button>About</button>
           <button>Resume</button>
         </div>
+        <img src="../public/me.png" alt="me" className="ako" /><br />
+        </div>
       </div>
-      <hr className="divider" />
+      <hr className="glow-hr" />
     </>
   );
 }
