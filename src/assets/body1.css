@@ -1,11 +1,32 @@
 .me {
     color: rgb(255, 255, 255);
-    padding: 10rem 0 3rem 3rem;
+    padding: 5rem 3rem;
     font-size: 2rem;
     line-height: 1.5rem;
-    justify-content: center;
-    
 }
+
+.typing-text {
+    display: inline-block;
+    position: relative;
+    color: rgb(4, 188, 255);
+    margin-right: 5px;
+    text-shadow: 0 1px 12px rgba(4, 188, 255, 1.5);
+}
+
+.cursor {
+    display: inline-block;
+    color: rgb(4, 188, 255);
+    animation: blink 1s infinite;
+    margin-left: 2px;
+}
+
+.buttons {
+    padding: 0 0 0 3rem;
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
 .me button {
     font-size: 1rem;
     color: azure;
@@ -19,22 +40,19 @@
     overflow: hidden;
     min-width: 120px;
 }
-.buttons {
-    padding: 0 0 0 3rem;
-    display: flex;
-    gap: 2rem;
-    margin-top: 2rem;
-}
+
 .me button:hover {
-    color:antiquewhite;
-    background-color:none;
+    color: antiquewhite;
+    background-color: transparent;
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(4, 188, 255, 0.5);
     border-color: rgba(4, 188, 255, 0.8);
 }
+
 .me button:active {
     transform: translateY(-1px);
 }
+
 .me button::after {
     content: '';
     position: absolute;
@@ -46,84 +64,87 @@
     opacity: 0;
     transition: opacity 0.3s ease;
 }
+
 .me button:hover::after {
     opacity: 1;
 }
-.typing-text {
-  display: inline-block;
-  position: relative;
-  color: rgb(4, 188, 255);
-  margin-right: 5px;
-  text-shadow: 0 1px 12px rgba(4, 188, 255, 1.5);
 
+.me img {
+    display: inline-block;
+    position: absolute;
+    right: 23rem;
+    top: 12rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 8px rgba(9, 104, 255, 0.8));
+    box-shadow: 0 0 10px rgba(4, 188, 255, 0.5);
+    transition: all 0.3s ease;
+    object-fit: cover;
 }
-.cursor {
-  display: inline-block;
-  color: rgb(4, 188, 255);
-  animation: blink 1s infinite;
-  margin-left: 2px;
-}
+
 .glow-hr {
     border: 0;
     height: 2px;
-    background: #011256;
+    background: linear-gradient(90deg, transparent, rgba(9, 104, 255, 0.8), transparent);
     position: relative;
     margin: 30px 0;
-    background: linear-gradient(90deg, transparent, rgba(9, 104, 255, 0.8), transparent);
     border-radius: 50%;
 }
-.me img{
-    display: inline-block;
-    position: Relative;
-    margin: -18rem 0 4rem 55rem;
-    width: 20%;
-    height: 15%;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(4, 188, 255, 0.5);
-    transition: all 0.3s ease;
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
 }
-        
+
 @media (max-width: 768px) {
     .me {
-        padding: 2rem 0 1rem 1rem;
+        padding: 2rem 1rem 1rem;
     }
+    
     .buttons {
-        padding: 0 0 0 0rem;
+        padding: 0;
         gap: 1rem;
-        width: 10%;
+        justify-content: center;
+        width: 100%;
     }
+    
     .me button {
         margin: 25px 0 0 0;
         font-size: 0.8rem;
         padding: 0.5rem 1rem;
     }
-    .text-content h1
-    {
+    
+    .text-content h1 {
         margin-bottom: 1rem;
         line-height: 1.1;  
     }
-    .text-content h4
-    {
-        margin-top: -10px;
-        line-height: 1;
+    
+    .text-content h4 {
+        margin-top: 0;
+        line-height: 1.5;
     }
-    .header-text
-    { 
-        line-height: -5rem;
+    
+    .header-text {
+        line-height: normal;
         font-size: 14px;
     }
-    .header-text h2{
-        line-height: 1rem;
-        margin: 1px 0 -.9rem 0;
+    
+    .header-text h2 {
         line-height: 1.1;
+        margin: 0 0 0.5rem 0;
     }
-    .me img{
-        position: static;
-        width: 30%;
-        margin: -15rem 0 5.5rem 16rem;
-
-    }
+    
+    .me img {
+        display: inline-block;
+        position: relative;
+        right: -3rem;
+        top: 10px;
+        width: 150px;
+        height: 150px;
+        }
+    
     .typing-text {
         font-size: 1rem;
-      }
+    }
 }

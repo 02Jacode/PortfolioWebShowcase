@@ -1,6 +1,7 @@
 import './assets/body1.css';
 // import { getCurrentTime } from './assets/clock.js';
 import { useEffect, useState } from 'react';
+import profileImage from '../public/me.png';
 
 function Body1() {
   // const [time, setTime] = useState(getCurrentTime());
@@ -63,11 +64,11 @@ function Body1() {
           }}>
             {time.dayOfWeek}, {time.fullDate} | {time.timeString}
           </div> */}
+          <img src={profileImage} alt="Jacob Cortes" className="profile-image" />
         <div className="buttons">
           <button>About</button>
           <button>Resume</button>
         </div>
-        <img src="../public/me.png" alt="me" className="ako" /><br />
         </div>
       </div>
       <hr className="glow-hr" />
