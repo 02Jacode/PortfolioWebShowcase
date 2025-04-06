@@ -1,9 +1,9 @@
-import './assets/body1.css';
+import './assets/hero.css';
 // import { getCurrentTime } from './assets/clock.js';
 import { useEffect, useState } from 'react';
 import profileImage from '../public/me.png';
 
-function Body1() {
+function Hero() {
   // const [time, setTime] = useState(getCurrentTime());
   const [roleIndex, setRoleIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
@@ -76,4 +76,4 @@ function Body1() {
   );
 }
 
-export default Body1;
+export default Hero;

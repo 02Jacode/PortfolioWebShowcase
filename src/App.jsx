@@ -1,14 +1,14 @@
 
 import Header from './Header.jsx'
-import Body1 from './body1.jsx'
-import Body2 from './body2.jsx'
+import Hero from './hero.jsx'
+import Skills from './skills.jsx'
 
 function App() {
   return (
     <>
       <Header />
-      <Body1 />
-      <Body2 />
+      <Hero />
+      <Skills />
     </>
   )
 }

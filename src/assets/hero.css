@@ -1,6 +1,6 @@
 .me {
     color: rgb(255, 255, 255);
-    padding: 5rem 3rem;
+    padding: 8rem 3rem;
     font-size: 2rem;
     line-height: 1.5rem;
 }
@@ -97,7 +97,7 @@
     50% { opacity: 0; }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
     .me {
         padding: 2rem 1rem 1rem;
     }
@@ -143,6 +143,23 @@
         width: 150px;
         height: 150px;
         }
+    
+    .typing-text {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 1024px ) {
+    .me {
+        padding: 2rem 1rem 1rem 2rem;
+    }
+    .me img {
+        display: inline-block;
+        position: static;
+        margin: 0 0 0 5rem;
+        top: 10px;
+        width: 200px;
+        height: 200px;
+    }
     
     .typing-text {
         font-size: 1rem;

@@ -23,7 +23,7 @@
     font-size: 2.5rem;
     font-weight: bold;
     -webkit-text-stroke: 2px rgb(4, 188, 255);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Times New Roma', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .menu{
 position: fixed;
