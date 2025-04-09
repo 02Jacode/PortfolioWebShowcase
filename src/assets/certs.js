@@ -3,7 +3,7 @@ const GetCerts = [
 
     {
         name: "Learning Adobe Color",
-        icon: "/public/certificates/adobecolor.PNG",
+        icon: "/certificates/adobecolor.PNG",
     },
     {
         name: "AppCon 2024",

@@ -11,9 +11,9 @@ function Projects(){
                 <div className="card-1">
                 {/* <span>Choose Joy Project is a Reviewer Web that allows student to view the teachers lessons</span> */}
                 </div></a>
+                <a href='https://e-katarungangpambarangay.com/home.php'>
                 <div className="card-2">
-                    <a href='https://e-katarungangpambarangay.com/home.php/'></a>
-                </div>
+                </div></a>
             </div>
             </div>
             <hr />
