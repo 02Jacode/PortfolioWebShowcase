@@ -15,13 +15,13 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 5rem;
-    transition: width 0.3s ease, height 0.5s linear, opacity 0.2s; 
 }
 .Skillset fieldset{
     font-size: 1.5rem;
     color:  rgb(255, 255, 255);
     border-radius: 14px;
     border: 2px solid rgb(4, 188, 255);
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
 
 }
 .Skillset legend{
@@ -55,7 +55,7 @@ ul li{
     transition: all 0.5s ease;
 }
 .icons img:hover{
-    transform: scale(1.2);
+    transform: scale(1.5);
     filter: drop-shadow(0 0 10px rgba(4, 188, 255, 0.8));
 }
 @media (max-width: 768px) {
@@ -74,5 +74,9 @@ ul li{
         flex-direction: grid;
         align-items: center;
         gap: 1rem;
+    }
+    .icons img{
+        width: 35px;
+        height: 25px;
     }
 }

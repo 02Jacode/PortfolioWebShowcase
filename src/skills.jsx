@@ -1,32 +1,5 @@
 import './assets/Skills.css'; 
-
-const iconskilss = [
-    { name: 'HTML', icon: "/SkillsIcon/html.png" },
-    { name: 'CSS', icon: "/SkillsIcon/css.png" },
-    { name: 'JavaScript', icon: "/SkillsIcon/js.png" },
-    { name: 'React', icon: "/SkillsIcon/react.png" },
-    { name: 'Bootstrap', icon: "/SkillsIcon/bootstrap.png" },
-    { name: 'Photoshop', icon: "/SkillsIcon/ps.png" },
-    { name: 'Figma', icon: "/SkillsIcon/figma.png" },
-    { name: 'PHP', icon: "/SkillsIcon/php.png" },
-    { name: 'SQL', icon: "/SkillsIcon/sql.png" },
-    { name: 'Cisco', icon: "/SkillsIcon/cisco.png" },
-    { name: 'AWS', icon: "/SkillsIcon/aws.png" },
-    { name: 'JAVA', icon: "/SkillsIcon/java.png" },
-    { name: 'C++', icon: "/SkillsIcon/c++.png" },
-    { name: 'C#', icon: "/SkillsIcon/csharp.png" },
-    { name: 'Python', icon: "/SkillsIcon/python.png" },
-    { name: 'Apache Cordova', icon: "/SkillsIcon/cordova.png" },
-    { name: 'Blender', icon: "/SkillsIcon/blender.png" },
-    { name: 'Adobe Animate', icon: "/SkillsIcon/animate.png" },
-    { name: 'Visual Studio', icon: "/SkillsIcon/vscode.png" },
-    { name: 'Microsoft Offices', icon: "/SkillsIcon/office.png" },
-    { name: 'Php MyAdmin', icon: "/SkillsIcon/phpmyadmin.png" },
-    { name: 'Filmora', icon: "/SkillsIcon/filmora.png" },
-    { name: 'Canva', icon: "/SkillsIcon/canva.png" },
-    { name: 'Canva', icon: "/SkillsIcon/filezilla.png" },
-    { name: 'OBS Studio', icon: "/SkillsIcon/obs.png" }
-]
+import skillsIcon from './assets/skillsIcon.js';
 
 function Skills(){
     return(
@@ -93,12 +66,12 @@ function Skills(){
                 <legend>Others</legend>
                 <ul>
                     <li>Visual Studio</li>
+                    <li>Git Bash</li>
                     <li>Microsoft Offices</li>
                     <li>Php MyAdmin</li>
                     <li>Filmora</li>
                     <li>Canva</li>
                     <li>OBS Studio</li>
-                    <li></li>
                     <li></li>
                     <li></li>
 
@@ -107,7 +80,7 @@ function Skills(){
                 </div>
             </div>
             <div className="icons">
-                {iconskilss.map((icon, index) => (
+                {skillsIcon.map((icon, index) => (
                     <div key={index} className="footer-icon">
                         <img 
                             src={icon.icon} 
