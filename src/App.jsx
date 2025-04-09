@@ -3,6 +3,7 @@ import Hero from './hero.jsx'
 import Skills from './skills.jsx'
 import Projects from './Projects.jsx'
 import Certs from './cert.jsx'
+import Contact from './contact.jsx'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Skills />
       <Projects />
       <Certs />
+      <Contact />
     </>
   )
 }

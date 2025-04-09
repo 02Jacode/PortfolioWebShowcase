@@ -1,6 +1,5 @@
 import './assets/projects.css';
 
-
 function Projects(){
     return(
         <>
@@ -15,9 +14,11 @@ function Projects(){
                 <div className="card-2">
                 </div></a>
             </div>
+                <details>
+                    <summary>School Activities</summary>
+                </details>
             </div>
             <hr />
-
         </>
     )
 }
