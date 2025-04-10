@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "my-project-portfolio",
   "private": true,
   "version": "0.0.0",
@@ -32,12 +33,24 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/02Jacode/PortfolioWebShowcase.git"
+=======
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> dd152ef733c0f037644ed5d25749cb0089e5a78d
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "bugs": {
     "url": "https://github.com/02Jacode/PortfolioWebShowcase/issues"
   },
   "homepage": "https://github.com/02Jacode/PortfolioWebShowcase#readme"
+=======
+  "type": "commonjs"
+>>>>>>> dd152ef733c0f037644ed5d25749cb0089e5a78d
 }
