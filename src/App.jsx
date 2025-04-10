@@ -1,4 +1,3 @@
-import { Route, Routes } from 'react-router-dom'
 import Header from './Header.jsx'
 import Hero from './hero.jsx'
 import Skills from './skills.jsx'
@@ -10,13 +9,21 @@ function App() {
   return (
     <>
     <Header />
-    <Routes>
-    <Route path="/" element={<Hero />} />
-    <Route path="/Skills" element={<Skills />} />
-    <Route path="/Projects" element={<Projects />} />
-    <Route path="/Certificates" element={<Certs />} />
-    <Route path="/Contact" element={<Contact />} />
-    </Routes>
+    <div id="home">
+    <Hero />
+    </div>
+    <div id="skill">
+    <Skills />
+    </div>    
+    <div id="projects">
+    <Projects />
+    </div>
+    <div id="certs">
+    <Certs />
+    </div>    
+    <div id="contact">
+    <Contact />
+    </div>    
     </>
   )
 }

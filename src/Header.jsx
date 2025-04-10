@@ -1,7 +1,8 @@
 import { IconHome } from '@tabler/icons-react';import { IconSettingsCheck } from '@tabler/icons-react';import { IconCertificate } from '@tabler/icons-react';import { IconPhone } from '@tabler/icons-react';import { IconX } from '@tabler/icons-react';import { IconMenu3 } from '@tabler/icons-react';import { IconAdjustmentsCog } from '@tabler/icons-react';
 import './assets/header.css';
 import { useState } from 'react';
-import {Link} from "react-route-dom"
+import { Link } from "react-router-dom";
+
 
 function Header(){
     const [isCollapsed, setIsCollapsed] = useState(true);
@@ -32,38 +33,36 @@ function Header(){
                     </button>
                 </div>
                 <br />
-
-                <Link to = "/Home">
+                    <a href="#home">
                     <button><IconHome stroke={2} />
                         <span>Home</span>
                     </button>
-                </Link>
-                <Link to = "/Skills">
+                    </a>
+                    <a href="#skill">
                     <button><IconSettingsCheck stroke={2} />
                         <span>Key Competencies</span>
                     </button>
-                </Link>
-                <Link to = "/Projects">
+                    </a>
+                    <a href="#projects">
                     <button><IconAdjustmentsCog stroke={2} />
                         <span>Projects</span>
                     </button>
-                </Link>
-                <Link to = "/Certificates">
+                    </a>
+                    <a href="#certs">
                     <button><IconCertificate stroke={2} />
                         <span>Certificates</span>
                     </button>
-                </Link>
-                <Link to = "/Contact">
+                    </a>
+                    <a href="#contact">
                     <button><IconPhone stroke={2} />
                         <span>Contact</span>
                     </button>
-                </Link>
+                    </a>
             </nav>
-
-
+            
         </div>
     </>
     );
 }
 
-export default Header
+export default Header;
